@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Alexandra Grullón</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar-container">
+    <nav class="navbar">
+      <a href="#" class="nav-brand">
+        <span class="nav-logo-text">ale</span>
+        <div class="nav-brand-text">
+          <span class="nav-brand-sub">Fondo Académico y Cultural</span>
+          <span class="nav-brand-main">Alexandra Grullón</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#valor">Hacia donde vamos</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#about">¿Quién era Ale?</a></li>
+        <li><a href="#about">Quienes somos</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Abriendo las esperanzas</h1>
+        <p>
+          Fondo Académico y Cultural Alexandra Grullón, es una iniciativa para honrar la memoria de nuestra querida ale y al mismo tiempo, ayudar a jóvenes en condición de vulnerabilidad y afectados de la tragedia del Jet Set para que estos puedan realizar sus estudios universitarios.
+        </p>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="img/ale_cara.jpg" alt="Alexandra Grullón sonriendo">
+    </div>
+  </section>
+
+  <!-- VALOR & HACIA DONDE VAMOS -->
+  <section id="valor" class="section-padding bg-white">
+    <div class="container">
+      <h2 class="section-title">Nuestro valor <span>y hacia dónde vamos</span></h2>
+      
+      <div class="valor-grid">
+        <div class="valor-list">
+          <div class="valor-item" onclick="changeValorTab(0)">
+            <div class="valor-item-icon">🔭</div>
+            <div class="valor-item-text">Visión</div>
+          </div>
+          <div class="valor-item" onclick="changeValorTab(1)">
+            <div class="valor-item-icon">🚩</div>
+            <div class="valor-item-text">Misión</div>
+          </div>
+          <div class="valor-item active" onclick="changeValorTab(2)">
+            <div class="valor-item-icon">🎯</div>
+            <div class="valor-item-text">Valor Fundamental</div>
+          </div>
+        </div>
+
+        <div class="valor-content-box" id="valorContentBox">
+          <!-- Content dynamically injected here via JS, defaulting to Hacia donde vamos (Visión/Valor) -->
+          <div class="valor-content-icon">🔭</div>
+          <h3>Hacia donde vamos</h3>
+          <p>
+            Ser una organización líder en la transformación social de la República Dominicana, reconocida por su impacto en el desarrollo académico y cultural de jóvenes y adultos en situación de vulnerabilidad, asegurando un futuro con igualdad de oportunidades, justicia social y esperanza, especialmente para quienes han sido afectados por la tragedia del Jet Set.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿QUIÉN ERA ALE? -->
+  <section id="quien-era" class="section-padding quien-section">
+    <div class="container">
+      <div class="quien-grid">
+        <div class="quien-text-box">
+          <h3>¿Quién era Ale?</h3>
+          <p>
+            Desde su nacimiento, en fecha 14 de julio de 1999, y por decisión de sus padres don Alejandro y doña Melba, su nombre de pila fue Alexandra María Grullón Segura. Sin embargo, para todos aquellos que tuvimos la dicha de compartir con ella en vida, su nombre de cariño fue siempre "Ale" y esperamos que lo siga llevando en las sendas de la eternidad. Así la llamaban en el seno familiar, entre sus compañeros de estudios, sus compañeros de labores y sus amigos.
+          </p>
+          <button class="btn-solid-green">Conocer Más Sobre Ale &gt;</button>
+        </div>
+        <div class="quien-image-box">
+          <img src="img/alexandra5.webp" alt="Alexandra Grullón">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJETIVOS -->
+  <section id="objetivos" class="section-padding" style="background-color: var(--cream);">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 1rem;">Nuestros objetivos</h2>
+      <p style="color: var(--text-gray); margin-bottom: 3rem; max-width: 800px;">
+        Nuestro fin es ayudar e impulsar a jóvenes que se encuentren en condiciones de vulnerabilidad económica y social.
+      </p>
+      
+      <div class="objetivos-grid">
+        <div class="obj-card obj-card-green">
+          <div class="obj-header">
+            <span class="obj-number">01</span>
+            <div class="obj-icon-circle">👥</div>
+          </div>
+          <h4>Acceso Inclusivo</h4>
+          <p>Fomentar el acceso inclusivo a la educación en todas sus modalidades, priorizando a jóvenes y adultos en estado de vulnerabilidad económica y social.</p>
+        </div>
+        
+        <div class="obj-card obj-card-red">
+          <div class="obj-header">
+            <span class="obj-number">02</span>
+            <div class="obj-icon-circle">📖</div>
+          </div>
+          <h4>Desarrollo Integral</h4>
+          <p>Contribuir al desarrollo integral de los beneficiarios a través de la capacitación académica, técnica y cultural, generando oportunidades sostenibles.</p>
+        </div>
+
+        <div class="obj-card obj-card-ochre">
+          <div class="obj-header">
+            <span class="obj-number">03</span>
+            <div class="obj-icon-circle">⚖️</div>
+          </div>
+          <h4>Derecho a educación</h4>
+          <p>Preservar y promover el derecho a la educación y la cultura como pilares fundamentales para la dignidad humana y el progreso social.</p>
+        </div>
+
+        <div class="obj-card obj-card-green">
+          <div class="obj-header">
+            <span class="obj-number">04</span>
+            <div class="obj-icon-circle">🎓</div>
+          </div>
+          <h4>Becas Educativas</h4>
+          <p>Brindar becas educativas, talleres y programas de formación a sobrevivientes y familiares de las víctimas de la tragedia del Jet Set.</p>
+        </div>
+
+        <div class="obj-card obj-card-brown">
+          <div class="obj-header">
+            <span class="obj-number">05</span>
+            <div class="obj-icon-circle">🎨</div>
+          </div>
+          <h4>Espacios de Expresión</h4>
+          <p>Crear y fortalecer espacios de expresión artística y cultural que impulsen el talento local y regional.</p>
+        </div>
+        
+        <div class="obj-card obj-card-green">
+          <div class="obj-header">
+            <span class="obj-number">06</span>
+            <div class="obj-icon-circle">🤝</div>
+          </div>
+          <h4>Alianzas Estratégicas</h4>
+          <p>Establecer alianzas con instituciones educativas, culturales y gubernamentales para ampliar el alcance e impacto de los programas de la fundación.</p>
+        </div>
+
+        <div class="obj-card obj-card-red">
+          <div class="obj-header">
+            <span class="obj-number">08</span>
+            <div class="obj-icon-circle">📋</div>
+          </div>
+          <h4>Mecanismos Evaluativos</h4>
+          <p>Implementar mecanismos de evaluación para garantizar la calidad, transparencia y sostenibilidad de las iniciativas desarrolladas, entre otros.</p>
+        </div>
+
+        <div class="obj-card obj-card-ochre">
+          <div class="obj-header">
+            <span class="obj-number">07</span>
+            <div class="obj-icon-circle">🌍</div>
+          </div>
+          <h4>Proyectos comunitarios</h4>
+          <p>Desarrollar proyectos comunitarios que fomenten la resiliencia emocional, la participación social y el liderazgo juvenil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="about" class="section-padding about-section">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="section-title" style="color: var(--white); margin: 0;">Sobre Nosotros</h2>
+        <div class="about-quote">
+          "Buscamos abrir caminos hacia un futuro con más oportunidades, dignidad y justicia social."
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-logo-box">
+          <div class="about-logo-big">ale</div>
+          <div class="about-logo-sub">
+            Fondo Académico y Cultural<br>
+            Alexandra Grullón
+          </div>
+        </div>
+        
+        <div class="about-text-box">
+          <h4>Fondo Académico y Cultural</h4>
+          <p>
+            Es una iniciativa para honrar la memoria de nuestra querida ale y al mismo tiempo, ayudar a jóvenes en condición de vulnerabilidad y afectados de la tragedia del Jet Set (sobrevivientes e hijos de las víctimas mortales) para que estos puedan realizar sus estudios universitarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICIAS Y NOVEDADES -->
+  <section id="noticias" class="section-padding bg-white">
+    <div class="container">
+      <h2 class="section-title">Noticias <span>y novedades</span></h2>
+      
+      <div class="news-grid">
+        <article class="news-card">
+          <img src="img/alexandra2.webp" alt="Noticia 1" class="news-img">
+          <div class="news-date">20 Octubre 2025</div>
+          <h3 class="news-title">Fondo Alexandra grullon brinda asistencia a niños necesitados</h3>
+        </article>
+
+        <article class="news-card">
+          <img src="img/alexandra3.png" alt="Noticia 2" class="news-img">
+          <div class="news-date">20 Octubre 2025</div>
+          <h3 class="news-title">Nuevas alianzas creadas benefician a fondos académicos y estudiantiles</h3>
+        </article>
+
+        <article class="news-card">
+          <img src="img/alexandra6.jpg" alt="Noticia 3" class="news-img">
+          <div class="news-date">20 Octubre 2025</div>
+          <h3 class="news-title">Expansión de fondos permite llegar a nuevas fronteras</h3>
+        </article>
+      </div>
+
+      <button class="btn-outline">Ver Más Noticias &gt;</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-left">
+          <div class="footer-logo">
+            <span class="footer-logo-text">ale</span>
+            <div class="footer-brand-text">
+              <span class="footer-brand-sub">Fondo Académico y Cultural</span>
+              <span class="footer-brand-main">Alexandra Grullón</span>
+            </div>
+          </div>
+          <div class="footer-links-row">
+            <a href="#valor">Hacia donde vamos</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#about">¿Quién era Ale?</a>
+            <a href="#about">Quienes somos</a>
+            <a href="#noticias">Noticias</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <h5>Recibe actualizaciones de nuestro trabajo</h5>
+          <form class="subscribe-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Ingresa tu email" required>
+            <button type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ale - Fondo académico y cultural UI. All rights reserved.</p>
+        <div class="social-icons">
+          <!-- Placeholder icons using text -->
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Twitter">tw</a>
+          <a href="#" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
